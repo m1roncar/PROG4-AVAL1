@@ -57,8 +57,11 @@ class HangmanModel extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
+                const Card(
+             child: Text("Mairon Carvalho Fortes")
+        ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 100.0, top: 150.0),
+          padding: const EdgeInsets.only(bottom: 100.0, top: 100.0),
           child: Image.asset(
             'assets/images/status/$status.png',
             width: 200,
@@ -74,9 +77,7 @@ class HangmanModel extends StatelessWidget {
               constraints: BoxConstraints.tight(const Size.fromHeight(100)),
               child: const KeyLetter()),
         ),
-        const Card(
-             child: Text("Mairon Carvalho Fortes")
-        ),
+
       ],
       
     ));
